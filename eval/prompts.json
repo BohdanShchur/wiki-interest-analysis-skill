@@ -1,0 +1,52 @@
+[
+  {
+    "id": "scenario-1",
+    "prompt": "Compare intermittent fasting in Polish and Czech Wikipedia over two years.",
+    "expected": "The agent should resolve both topics, fetch pageview data, compare trends and absolute views, and return compact findings with charts or PDF if requested."
+  },
+  {
+    "id": "scenario-2",
+    "prompt": "Analyze astronomy in Ukrainian.",
+    "expected": "The agent should resolve the Ukrainian article, validate the dataset, and provide trend/quality metrics without over-claiming."
+  },
+  {
+    "id": "scenario-3",
+    "prompt": "Compare English-learning interest across multiple languages.",
+    "expected": "The agent should handle a multi-language comparison and clearly separate scale from relative growth."
+  },
+  {
+    "id": "scenario-4",
+    "prompt": "Topic does not exist.",
+    "expected": "The agent should report unresolved or uncertain page resolution and avoid guessing a title."
+  },
+  {
+    "id": "scenario-5",
+    "prompt": "Page differs strongly by language.",
+    "expected": "The agent should compare apparent page names and not confuse a translated title with a canonical equivalent."
+  },
+  {
+    "id": "scenario-6",
+    "prompt": "Missing data.",
+    "expected": "The agent should warn about missing periods and either flag the dataset as weak or continue with a clear limitation."
+  },
+  {
+    "id": "scenario-7",
+    "prompt": "Current incomplete month.",
+    "expected": "The agent should detect partial current period data and exclude or warn on incomplete observations."
+  },
+  {
+    "id": "scenario-8",
+    "prompt": "Large one-time spike.",
+    "expected": "The agent should flag a spike as a temporary anomaly instead of treating it as sustained growth."
+  },
+  {
+    "id": "scenario-9",
+    "prompt": "Three languages with different traffic scale.",
+    "expected": "The agent should explain the scale mismatch and focus on relative trend alongside absolute views."
+  },
+  {
+    "id": "scenario-10",
+    "prompt": "Follow-up request changing the date range to 2025 only.",
+    "expected": "The agent should reuse the same analysis pipeline and update the date window without rebuilding the entire system."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "topics": ["intermittent fasting"],
+  "languages": ["pl", "cs"],
+  "startDate": "2024-01-01",
+  "endDate": "2026-01-01",
+  "granularity": "daily",
+  "access": "all-access",
+  "agent": "all-agents",
+  "normalized": true,
+  "statistics": true,
+  "detectAnomalies": true,
+  "report": {
+    "generatePdf": true,
+    "generateCharts": true
+  }
+}
